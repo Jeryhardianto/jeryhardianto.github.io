@@ -1,0 +1,70 @@
+body {
+    font-family: 'Quicksand', sans-serif;
+}
+
+.slider h3,
+.slider h5,
+.clients h3 {
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+    font-family: 'nunito', helveticaneue, helvetica neue, Helvetica, Arial, sans-serif !important;
+}
+
+.profil h3,
+.profil h5 {
+    font-family: 'nunito', helveticaneue, helvetica neue, Helvetica, Arial, sans-serif;
+    /* text-shadow: 2px 3px 3px rgba(0, 0, 0, 0.62); */
+    font-weight: bolder;
+}
+
+h3,
+h6 {
+    font-family: 'nunito', helveticaneue, helvetica neue, Helvetica, Arial, sans-serif;
+    /* text-shadow: 2px 3px 3px rgba(0, 0, 0, 0.62); */
+    font-weight: bolder;
+}
+
+.home {
+    font-family: 'nunito', helveticaneue, helvetica neue, Helvetica, Arial, sans-serif;
+    /* text-shadow: 2px 3px 3px rgba(0, 0, 0, 0.62); */
+    font-weight: bolder;
+}
+
+.parallax-container {
+    height: 20%;
+}
+
+.parallax img {
+    filter: grayscale(1);
+    opacity: 0.5 !important;
+}
+
+.clients img {
+    max-width: 150px;
+    filter: drop-shadow(1px 1px 1px rgb(0, 0, 0, 0.9));
+}
+
+section,
+footer {
+    padding: 20px 0;
+}
+
+.gambar img {
+    width: 200px;
+    border: 5px solid #666;
+}
+
+.gambar_thumb img {
+    width: 100px;
+    border: 5px solid #666;
+}
+
+.ig-thumbnail {
+    width: 100px;
+    height: 100px;
+    float: left;
+    overflow: hidden;
+}
+
+.ig-thumbnail img {
+    width: 100px;
+}
