@@ -15,24 +15,40 @@
     <!-- Favicon icon -->
     <link rel="icon" type="image/png" sizes="20x20" href="/assets/icons/logo-1.png">
     <title>Jeryhardianto_</title>
+
+    <style>
+        .icon {
+            font-size: 15px;
+        }
+    </style>
 </head>
 
-<body id="home" class="scrollspy">
+<body id="home" class=" scrollspy">
 
     <!-- navbar -->
     <div class="navbar-fixed">
-        <nav class="blue darken-1">
+        <nav class="navbar  darken-1">
             <div class="container">
                 <div class="nav-wrapper">
-                    <a href="#home" class=" brand-logo" style="margin-left:2% ;">Jeryhardianto</a>
+                    <a href="#home" class=" brand-logo" style="margin-left:2% ;">Jeryhardianto_</a>
                     <a href="#" data-target="mobile-nav" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+                    </ul>
+                    <div class="right ">
+                        <ul>
+                            <li>
+                                <a class="icon" onclick="setDarkMode()" id="darkBtn">🌙</a>
+                            </li>
+                        </ul>
+                    </div>
                     <ul class="right hide-on-med-and-down" style="margin-right:15% ;">
                         <li><a href="#about">About</a></li>
                         <li><a href="#project">Project</a></li>
                         <li><a href="#skills">Skills</a></li>
                         <li><a href="#exeperiences">Exepriences</a></li>
+                        <li>
+                        </li>
 
-                    </ul>
+
                 </div>
             </div>
         </nav>
@@ -57,19 +73,23 @@
         <li><a href="#project">Project</a></li>
         <li><a href="#skills">Skills</a></li>
         <li><a href="#exeperiences">Exepriences</a></li>
+        <!-- <span class="icon">☀️</span> -->
+        <!-- <span style="margin-left: 20px;" class="icon">🌙</span> -->
+
         <!-- <li><a href="#contact">Contact Us</a></li> -->
     </ul>
+    <!-- <a class="icon" onclick="setDarkMode()" id="darkBtn">🌙</a> -->
     <!-- end sidenav -->
 
     <!-- profil -->
-    <section id="profil" class="profil grey lighten-2 center" scrollspy>
+    <section id="profil" class="profil  lighten-2 center" scrollspy>
         <div class="container">
             <div class="row">
                 <div class="gambar">
                     <img src="assets/img/profil.jpg " alt="" class="circle responsive-img" />
-                    <h3 class="center bold grey-text black-text">Jery Hardianto</h3>
+                    <h3 class="center bold ">Jery Hardianto</h3>
                     <h5 class="center blue-text  #0d47a1 text-darken-1 ">Back End Web Developer</h5>
-                    <h6 class="center  grey-text black-text">North Kalimantan</h6><br>
+                    <h6 class="center">North Kalimantan</h6><br>
                 </div>
                 <div class="col s12">
                     <!-- icons credit to https://www.flaticon.com/ -->
@@ -255,9 +275,8 @@
     <!-- end portfolio -->
 
     <!-- footer -->
-    <footer class="blue darken-2 white-text center ">
-        <p class="flow-text ">Jeryhardianto_ <i class="material-icons ">copyright</i>
-            <?= date('Y') ?>
+    <footer class="footer darken-2 white-text center ">
+        <p class="flow-text ">Jeryhardianto_ <i class="material-icons ">copyright</i>2020
         </p>
     </footer>
     <!-- end footer -->
@@ -265,6 +284,30 @@
     <!-- Compiled and minified JavaScript -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
     <script>
+        //DarkMode 
+        //menyimpan dark mode dilocal store
+        if (localStorage.getItem('theme') == 'dark')
+            setDarkMode()
+
+        function setDarkMode() {
+            let emoticon = ''
+            let isDark = document.body.classList.toggle('darkmode')
+
+            if (isDark) {
+                emoticon = '☀️ Light'
+                    // document.body.setAttribute('id', 'darkmode')
+                localStorage.setItem('theme', 'dark')
+            } else {
+                emoticon = '🌙 Dark'
+                    // document.body.setAttribute('id', '')
+                localStorage.removeItem('theme')
+            }
+            document.getElementById('darkBtn').innerHTML = emoticon
+
+        }
+
+
+
         const sideNav = document.querySelectorAll('.sidenav');
         M.Sidenav.init(sideNav);
 
