@@ -1,119 +1,115 @@
-    body {
-    font-family: 'Quicksand', sans-serif;
-}
-
-.slider h3,
-.slider h5,
-.clients h3 {
-    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
-    font-family: 'nunito', helveticaneue, helvetica neue, Helvetica, Arial, sans-serif !important;
-}
-
-.profil h3,
-.profil h5 {
-    font-family: 'nunito', helveticaneue, helvetica neue, Helvetica, Arial, sans-serif;
-    /* text-shadow: 2px 3px 3px rgba(0, 0, 0, 0.62); */
-    font-weight: bolder;
-}
-
-h3,
-h6 {
-    font-family: 'nunito', helveticaneue, helvetica neue, Helvetica, Arial, sans-serif;
-    /* text-shadow: 2px 3px 3px rgba(0, 0, 0, 0.62); */
-    font-weight: bolder;
-}
-
-.home {
-    font-family: 'nunito', helveticaneue, helvetica neue, Helvetica, Arial, sans-serif;
-    /* text-shadow: 2px 3px 3px rgba(0, 0, 0, 0.62); */
-    font-weight: bolder;
-}
-
-.parallax-container {
-    height: 20%;
-}
-
-.parallax img {
-    filter: grayscale(1);
-    opacity: 0.5 !important;
-}
-
-.clients img {
-    max-width: 150px;
-    filter: drop-shadow(1px 1px 1px rgb(0, 0, 0, 0.9));
-}
-
-section,
-footer {
-    padding: 20px 0;
-}
-
-.gambar img {
-    width: 200px;
-    border: 5px solid #666;
-}
-
-.gambar_thumb img {
-    width: 100px;
-    border: 5px solid #666;
-}
-
-.ig-thumbnail {
-    width: 100px;
-    height: 100px;
-    float: left;
-    overflow: hidden;
-}
-
-.ig-thumbnail img {
-    width: 100px;
-}
-
-.profil {
-    background: rgb(192, 188, 188);
-}
-
-.navbar {
-    background: rgb(25, 118, 210);
-}
-
-.footer {
-    background: rgb(25, 118, 210);
-}
-
-
-/* DarkMode */
-
-.darkmode {
-    background: rgb(2, 24, 40);
-    color: whitesmoke;
-}
-
-.darkmode .profil {
-    background: rgb(9, 70, 70);
-    color: whitesmoke;
-}
-
-.darkmode .navbar {
-    background: rgb(72, 134, 134);
-    color: whitesmoke;
-}
-
-.darkmode .footer {
-    background: rgb(72, 134, 134);
-    color: whitesmoke;
-}
-
-.darkmode .card {
-    background: rgb(72, 134, 134);
-    box-shadow: 4px 8px #60b360;
-    color: whitesmoke;
-}
-
-
-/* Mobile Version */
-
-@media only screen and (max-width: 600px) {
-    body {
-        background-color: lightblue;
+        body {
+        font-family: 'Quicksand', sans-serif;
     }
+    
+    .slider h3,
+    .slider h5,
+    .clients h3 {
+        text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+        font-family: 'nunito', helveticaneue, helvetica neue, Helvetica, Arial, sans-serif !important;
+    }
+    
+    .profil h3,
+    .profil h5 {
+        font-family: 'nunito', helveticaneue, helvetica neue, Helvetica, Arial, sans-serif;
+        /* text-shadow: 2px 3px 3px rgba(0, 0, 0, 0.62); */
+        font-weight: bolder;
+    }
+    
+    h3,
+    h6 {
+        font-family: 'nunito', helveticaneue, helvetica neue, Helvetica, Arial, sans-serif;
+        /* text-shadow: 2px 3px 3px rgba(0, 0, 0, 0.62); */
+        font-weight: bolder;
+    }
+    
+    .home {
+        font-family: 'nunito', helveticaneue, helvetica neue, Helvetica, Arial, sans-serif;
+        /* text-shadow: 2px 3px 3px rgba(0, 0, 0, 0.62); */
+        font-weight: bolder;
+    }
+    
+    .parallax-container {
+        height: 20%;
+    }
+    
+    .parallax img {
+        filter: grayscale(1);
+        opacity: 0.5 !important;
+    }
+    
+    .clients img {
+        max-width: 150px;
+        filter: drop-shadow(1px 1px 1px rgb(0, 0, 0, 0.9));
+    }
+    
+    section,
+    footer {
+        padding: 20px 0;
+    }
+    
+    .gambar img {
+        width: 200px;
+        border: 5px solid #666;
+    }
+    
+    .gambar_thumb img {
+        width: 100px;
+        border: 5px solid #666;
+    }
+    
+    .ig-thumbnail {
+        width: 100px;
+        height: 100px;
+        float: left;
+        overflow: hidden;
+    }
+    
+    .ig-thumbnail img {
+        width: 100px;
+    }
+    
+    .profil {
+        background: rgb(192, 188, 188);
+    }
+    
+    .navbar {
+        background: rgb(25, 118, 210);
+    }
+    
+    .footer {
+        background: rgb(25, 118, 210);
+    }
+    /* DarkMode */
+    
+    .darkmode {
+        background: rgb(2, 24, 40);
+        color: whitesmoke;
+    }
+    
+    .darkmode .profil {
+        background: rgb(9, 70, 70);
+        color: whitesmoke;
+    }
+    
+    .darkmode .navbar {
+        background: rgb(72, 134, 134);
+        color: whitesmoke;
+    }
+    
+    .darkmode .footer {
+        background: rgb(72, 134, 134);
+        color: whitesmoke;
+    }
+    
+    .darkmode .card {
+        background: rgb(72, 134, 134);
+        box-shadow: 4px 8px #60b360;
+        color: whitesmoke;
+    }
+    /* Mobile Version */
+    
+    @media only screen and (max-width: 600px) {
+        body {
+            background-color: lightblue;
+        }
