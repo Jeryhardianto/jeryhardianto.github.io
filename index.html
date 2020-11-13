@@ -8,7 +8,8 @@
     <!-- <link type="text/css" rel="stylesheet" href="assets/css/materialize.min.css" media="screen,projection" /> -->
     <!-- Compiled and minified CSS -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
-
+    <!-- AOS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <!-- CSSHAKE -->
     <link rel="stylesheet" type="text/css" href="https://csshake.surge.sh/csshake.min.css">
     <link rel="stylesheet" href="assets/css/style.css">
@@ -84,7 +85,7 @@
     <!-- end sidenav -->
 
     <!-- profil -->
-    <section id="profil" class="profil  lighten-2 center" scrollspy>
+    <section data-aos="zoom-in-up" id="profil" class="profil  lighten-2 center" scrollspy>
         <div class="container">
             <div class="row">
                 <div class="gambar">
@@ -112,7 +113,7 @@
     <!-- end profil -->
 
     <!-- about us -->
-    <section id="about" class="about scrollspy">
+    <section data-aos="zoom-in-up" id="about" class="about scrollspy">
         <div class="container">
             <div class="row">
                 <h3 class="center blue-text  #0d47a1 text-darken-1 "><strong>#About Us</strong> </h3>
@@ -126,7 +127,7 @@
     <!--  end about us -->
 
     <!-- projec -->
-    <div id="project" class="parallax-container scrollspy ">
+    <div data-aos="zoom-in-up" id="project" class="parallax-container scrollspy ">
         <div class="container">
             <div class="row">
                 <h3 class="center blue-text  #0d47a1 text-darken-1 "><strong>#Project</strong> </h3>
@@ -179,7 +180,7 @@
     <!-- end projec -->
 
     <!-- skills -->
-    <section id="skills" class="parallax-container scrollspy">
+    <section data-aos="zoom-in-up" id="skills" class="parallax-container scrollspy">
         <div class="container ">
             <div class="row">
                 <h3 class="center blue-text  #0d47a1 text-darken-1 "><strong>#Skills</strong> </h3>
@@ -239,7 +240,7 @@
     <!-- end services -->
 
     <!-- portfolio -->
-    <section id="exeperiences" class="parallax-container scrollspy">
+    <section data-aos="zoom-in-up" id="exeperiences" class="parallax-container scrollspy">
         <div class="container ">
             <div class="row">
                 <h3 class="center blue-text  #0d47a1 text-darken-1 "><strong>#Exeperiences</strong> </h3>
@@ -278,7 +279,7 @@
     <!-- end portfolio -->
 
     <!-- footer -->
-    <footer class="footer darken-2 white-text center ">
+    <footer data-aos="zoom-in-up" class="footer darken-2 white-text center ">
         <p class="flow-text ">Jeryhardianto_ <i class="material-icons ">copyright</i>2020
         </p>
     </footer>
@@ -287,6 +288,10 @@
     <!-- Compiled and minified JavaScript -->
     <link rel="stylesheet" type="text/css" href="http://csshake.surge.sh/csshake-slow.min.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
     <script>
         //DarkMode 
         //menyimpan dark mode dilocal store
