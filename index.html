@@ -390,6 +390,13 @@
         M.ScrollSpy.init(scroll, {
             scrollOffset: 50
         });
+        window.onload = function getLocation() {
+            if (navigator.geolocation) {
+                navigator.geolocation.getCurrentPosition(showPosition);
+            } else {
+                x.innerHTML = "Geolocation is not supported by this browser.";
+            }
+        }
     </script>
 </body>
 
