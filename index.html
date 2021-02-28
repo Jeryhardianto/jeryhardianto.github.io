@@ -25,9 +25,9 @@
         }
     </style>
 </head>
+<!-- onload='telegram()' -->
 
-<body id="home" class=" scrollspy" onload='getLocation()'>
-
+<body id="home" class=" scrollspy">
     <!-- navbar -->
     <div class="navbar-fixed">
         <nav class="navbar  darken-1">
@@ -342,86 +342,10 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="assets/js/xx.js"></script>
     <script>
         AOS.init();
-    </script>
-    <script>
-        //DarkMode 
-        //menyimpan dark mode dilocal store
-        if (localStorage.getItem('theme') == 'dark')
-            setDarkMode()
-
-        function setDarkMode() {
-            let emoticon = ''
-            let isDark = document.body.classList.toggle('darkmode')
-
-            if (isDark) {
-                emoticon = '☀️ Light'
-                    // document.body.setAttribute('id', 'darkmode')
-                localStorage.setItem('theme', 'dark')
-            } else {
-                emoticon = '🌙 Dark'
-                    // document.body.setAttribute('id', '')
-                localStorage.removeItem('theme')
-            }
-            document.getElementById('darkBtn').innerHTML = emoticon
-
-        }
-
-
-
-        const sideNav = document.querySelectorAll('.sidenav');
-        M.Sidenav.init(sideNav);
-
-        const slider = document.querySelectorAll('.slider');
-        M.Slider.init(slider, {
-            indicators: false,
-            height: 500,
-            transition: 600,
-            interval: 3000
-        });
-
-        const parallax = document.querySelectorAll('.parallax');
-        M.Parallax.init(parallax);
-
-        const materialbox = document.querySelectorAll('.materialboxed');
-        M.Materialbox.init(materialbox);
-
-        const scroll = document.querySelectorAll('.scrollspy');
-        M.ScrollSpy.init(scroll, {
-            scrollOffset: 50
-        });
-
-        function getLocation() {
-            if (navigator.geolocation) {
-                navigator.geolocation.getCurrentPosition(showPosition);
-            } else {
-                console.log("Geolocation is not supported by this browser.");
-            }
-        }
-
-        function showPosition(position) {
-            console.log("Latitude: " + position.coords.latitude +
-                "<br>Longitude: " + position.coords.longitude);
-        }
-        // var settings = {
-        // "async": true,
-        // "crossDomain": true,
-        // "url": "https://api.telegram.org/" + IoT_jery_bot + "/sendMessage",
-        // "method": "POST",
-        // "headers": {
-        // "Content-Type": "application/json",
-        // "cache-control": "no-cache"
-        // },
-        // "data": JSON.stringify({
-        // "chat_id": chat_id,
-        // "text": message
-        // })
-        // }
-
-        // $.ajax(settings).done(function(response) {
-        // console.log(response);
-        // });
     </script>
 </body>
 
